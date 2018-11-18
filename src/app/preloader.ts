@@ -10,7 +10,7 @@ export class Preloader implements PreloadingStrategy {
     return of('').pipe(
       delay(3000),
       switchMap(() => {
-        console.log('preloading!');
+        console.log('preloading!', fn);
         return fn();
       })
     );

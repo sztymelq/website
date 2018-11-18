@@ -5,6 +5,7 @@ import { Preloader } from './preloader';
 const routes: Routes = [
   { path: 'first', loadChildren: './first/first.module#FirstModule'},
   { path: 'second', loadChildren: './second/second.module#SecondModule'},
+  { path: '**', pathMatch: 'full', redirectTo: ''}
 ];
 
 @NgModule({
