@@ -1,0 +1,28 @@
+:host {
+  width: 100vw;
+  height: 8rem;
+  box-shadow: lightgray 0 0 20px;
+  display: grid;
+  grid-template-areas: 'logo links';
+  padding: 0 2rem;
+}
+
+.links {
+  grid-area: links;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.link {
+  padding: 0 2rem;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+}
