@@ -4,7 +4,7 @@
   box-shadow: lightgray 0 0 20px;
   display: grid;
   grid-template-areas: 'logo links';
-  padding: 0 2rem;
+  padding: 0 0 0 2rem;
 }
 
 .links {
@@ -19,6 +19,12 @@
   height: 100%;
   align-items: center;
   display: flex;
+  text-decoration: none;
+
+  &__active {
+    font-weight: bold;
+    background: #E8E8E8;
+  }
 }
 
 .logo {
