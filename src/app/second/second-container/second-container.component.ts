@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { fromEvent, combineLatest } from 'rxjs';
 import { takeWhile } from 'rxjs/operators';
 
@@ -7,7 +7,7 @@ import { takeWhile } from 'rxjs/operators';
   templateUrl: './second-container.component.html',
   styleUrls: ['./second-container.component.scss']
 })
-export class SecondContainerComponent implements OnInit {
+export class SecondContainerComponent implements OnInit, OnDestroy {
   status = 'online';
   isAlive: boolean = true;
 
